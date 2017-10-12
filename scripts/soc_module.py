@@ -89,7 +89,7 @@ def map_data(myMap, alameda, obs_data):
                 title="Tract: " + tract,
                 comment=comment,
                 imgpath=image_url,
-                data="Average: " + str(data))
+                data="")
             folium.Marker(
                 coords,
                 popup=folium.Popup(
@@ -138,13 +138,24 @@ def choropleth_overlay(mapa, column_name, joined, alameda, obs_data):
             comment = row["Other thoughts or comments"]
             if not isinstance(comment, str):
                 comment = "NA"
-            data = np.mean([row[i] for i in range(5, 14)
-                            if type(row[i]) in [int, float]])
+            data_sd = str(
+                float(
+                    joined[
+                        joined['Census Tract'] == tract]['Social Disorder']))
+            data_am = str(
+                float(
+                    joined[
+                        joined['Census Tract'] == tract]['Amenities']))
             html = html_popup(
-                title="Tract: " + tract,
+                title="Tract: " +
+                tract,
                 comment=comment,
                 imgpath=image_url,
-                data="Average: " + str(data))
+                data="Social Disorder: " +
+                str(data_sd) +
+                '\n' +
+                "Amenities: " +
+                str(data_am))
             folium.Marker(
                 coords,
                 popup=folium.Popup(
