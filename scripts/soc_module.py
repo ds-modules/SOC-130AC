@@ -4,6 +4,7 @@ import folium
 import geojson
 import random
 import numpy as np
+from sklearn import preprocessing
 
 
 def download_images(table):
@@ -154,3 +155,13 @@ def choropleth_overlay(mapa, column_name, joined, alameda, obs_data):
                     max_width=2650)).add_to(marker_cluster)
 
     return mapa
+
+
+def scale_values(df, columns):
+    for c in columns:
+        name = df.columns[c]
+        x = df.iloc[:, [c]].values  # returns a numpy array
+        min_max_scaler = preprocessing.MinMaxScaler()
+        x_scaled = min_max_scaler.fit_transform(x)
+        df[name] = x_scaled
+    return df
