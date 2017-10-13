@@ -112,7 +112,7 @@ def choropleth_overlay(mapa, column_name, joined, alameda, obs_data):
         joined[column_name].min(),
         joined[column_name].max(),
         6,
-        dtype=int).tolist()
+        dtype=float).tolist()
 
     mapa = folium.Map(location=(37.8044, -122.2711), zoom_start=11)
 
