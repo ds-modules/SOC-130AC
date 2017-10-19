@@ -1,4 +1,6 @@
 # SOC-130AC- Social Inequalities, American Cultures
+[![Binder](https://beta.mybinder.org/badge.svg)](https://beta.mybinder.org/v2/gh/ds-modules/SOC-130AC/master)
+
 <p>Instructor: Joanna Reed
 <p>Developers: Michaela Palmer, Gavin Poe, Theodore Tran
 
