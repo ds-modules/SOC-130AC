@@ -5,7 +5,8 @@ import geojson
 import random
 import numpy as np
 from sklearn import preprocessing
-
+from geopy.geocoders import GoogleV3
+geolocator = GoogleV3(api_key = 'AIzaSyCvK2IQWtslwd4pf4acGohveQJ61AuMLhw')
 
 def download_images(table):
     for index, row in table.iterrows():
@@ -80,8 +81,17 @@ def map_data(myMap, alameda, obs_data):
                         "open?", "uc?").split(","))
             except:
                 image_url = "NA"
+                
             tract = str(row['Census Tract'])
-            coords = row['Coordinates']
+                        
+            address = row['Full Address of Photo Location']
+            loc = geolocator.geocode(address)
+
+            if loc is None :
+                coords = tract_centroids[tract]
+            else:
+                coords = [loc.latitude, loc.longitude]
+            
             comment = row["Comments"]
             if not isinstance(comment, str):
                 comment = "NA"
