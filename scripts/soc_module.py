@@ -68,9 +68,11 @@ def map_data(myMap, alameda, obs_data):
     tract_centroids = get_centroids(alameda)
     myMap.add_child(tracts)
 
+    
     for t in list(set(set(obs_data['Census Tract']))):
         marker_cluster = folium.plugins.MarkerCluster().add_to(myMap)
         subset = obs_data[obs_data['Census Tract'] == t]
+        
         for i, row in subset.iterrows():
             try:
                 image_url = random.choice(
@@ -79,8 +81,8 @@ def map_data(myMap, alameda, obs_data):
             except:
                 image_url = "NA"
             tract = str(row['Census Tract'])
-            coords = tract_centroids[tract]
-            comment = row["Other thoughts or comments"]
+            coords = row['Coordinates']
+            comment = row["Comments"]
             if not isinstance(comment, str):
                 comment = "NA"
             data = np.mean([row[i] for i in range(5, 14)
@@ -98,7 +100,6 @@ def map_data(myMap, alameda, obs_data):
                         width=200,
                         height=300),
                     max_width=2650)).add_to(marker_cluster)
-
     return myMap
 
 
@@ -124,7 +125,6 @@ def choropleth_overlay(mapa, column_name, joined, alameda, obs_data):
                     threshold_scale=threshold_scale)
 
     for t in list(set(set(obs_data['Census Tract']))):
-        marker_cluster = folium.plugins.MarkerCluster().add_to(mapa)
         subset = obs_data[obs_data['Census Tract'] == t]
         for i, row in subset.iterrows():
             try:
@@ -134,8 +134,8 @@ def choropleth_overlay(mapa, column_name, joined, alameda, obs_data):
             except:
                 image_url = "NA"
             tract = str(row['Census Tract'])
-            coords = tract_centroids[tract]
-            comment = row["Other thoughts or comments"]
+            coords = row['Coordinates']
+            comment = row["Comments"]
             if not isinstance(comment, str):
                 comment = "NA"
             data_sd = str(
@@ -163,7 +163,7 @@ def choropleth_overlay(mapa, column_name, joined, alameda, obs_data):
                         html=html,
                         width=200,
                         height=300),
-                    max_width=2650)).add_to(marker_cluster)
+                    max_width=2650)).add_to(mapa)
 
     return mapa
 
