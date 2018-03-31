@@ -6,18 +6,7 @@ import random
 import numpy as np
 from sklearn import preprocessing
 from geopy.geocoders import GoogleV3
-geolocator = GoogleV3(api_key = 'AIzaSyCvK2IQWtslwd4pf4acGohveQJ61AuMLhw')
-
-def download_images(table):
-    for index, row in table.iterrows():
-        census_tract = row["Census Tract"]
-        urls = row["Images"].split(", ")
-        for u in urls:
-            fid = u.split("id=")[-1]
-            os.system(
-                "curl -L -o images/{}.jpg 'https://drive.google.com/uc?export=download&id={}'".format(
-                    str(census_tract) + "---" + fid, fid))
-
+geolocator = GoogleV3()
 
 def html_popup(title, comment, imgpath, data):
     html = """
@@ -78,9 +67,8 @@ def map_data(myMap, alameda, obs_data):
             for j in np.arange(1, 6):
                 if not pd.isnull(row['Image #' + str(j)]):
                     try:
-                        image_url = random.choice(
-                            str(row['Image #' + str(j)]).replace(
-                                "open?", "uc?").split(","))
+                        image_url = row['Image #' + str(j)].replace(
+                            "open?", "uc?export=download&")
                     except:
                         image_url = "NA"
 
@@ -136,59 +124,6 @@ def choropleth_overlay(mapa, column_name, joined, alameda, obs_data):
                     fill_color='YlOrRd',
                     key_on='feature.properties.name10',
                     threshold_scale=threshold_scale)
-
-    for t in list(set(set(obs_data['Census Tract']))):
-        subset = obs_data[obs_data['Census Tract'] == t]
-        for i, row in subset.iterrows():
-            for j in np.arange(1, 6):
-                if not pd.isnull(row['Image #' + str(j)]):
-                    try:
-                        image_url = random.choice(
-                            row['Image #' + str(j)].replace(
-                                "open?", "uc?").split(","))
-                    except:
-                        image_url = "NA"
-                    tract = str(row['Census Tract'])
-
-                    address = row['Full Address of Photo #' + str(j) + ' Location']
-                    loc = geolocator.geocode(address)
-
-                    if loc is None :
-                        coords = tract_centroids[tract]
-                    else:
-                        coords = [loc.latitude, loc.longitude]
-                    
-                    comment = row["Other thoughts or comments for Image #" + str(j)]
-                    
-                    if not isinstance(comment, str):
-                        comment = "NA"
-                        
-                    data_sd = str(
-                        float(
-                            joined[
-                                joined['Census Tract'] == tract]['Social Disorder']))
-                    data_am = str(
-                        float(
-                            joined[
-                                joined['Census Tract'] == tract]['Amenities']))
-                    html = html_popup(
-                        title="Tract: " +
-                        tract,
-                        comment=comment,
-                        imgpath=image_url,
-                        data="Social Disorder: " +
-                        str(data_sd) +
-                        '\n' +
-                        "Amenities: " +
-                        str(data_am))
-                    folium.Marker(
-                        coords,
-                        popup=folium.Popup(
-                            folium.IFrame(
-                                html=html,
-                                width=200,
-                                height=300),
-                            max_width=2650)).add_to(mapa)
 
     return mapa
 
