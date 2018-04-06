@@ -5,8 +5,9 @@ import geojson
 import random
 import numpy as np
 from sklearn import preprocessing
-from geopy.geocoders import GoogleV3
-geolocator = GoogleV3()
+from geopy.geocoders import Nominatim
+geolocator = Nominatim()
+
 
 def html_popup(title, comment, imgpath, data):
     html = """
