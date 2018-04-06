@@ -52,6 +52,9 @@ def get_centroids(geojson):
 
     return tract_centroids
 
+def find_coords(obs_data):
+    
+
 
 def map_data(myMap, alameda, obs_data):
     # add tract outlines
