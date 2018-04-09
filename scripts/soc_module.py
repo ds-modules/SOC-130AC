@@ -7,10 +7,6 @@ import numpy as np
 from sklearn import preprocessing
 import re
 
-from geopy.geocoders import GoogleV3
-geolocator = GoogleV3(api_key="AIzaSyCOwnzEbozZFtmuwWQCQrfz__mIgg02BWg")
-
-
 def html_popup(title, comment, imgpath, data):
     html = """
     <h3>TITLE</h3>
