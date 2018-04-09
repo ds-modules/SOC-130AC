@@ -5,8 +5,10 @@ import geojson
 import random
 import numpy as np
 from sklearn import preprocessing
-from geopy.geocoders import Nominatim
-geolocator = Nominatim()
+import re
+
+from geopy.geocoders import GoogleV3
+geolocator = GoogleV3(api_key="AIzaSyCOwnzEbozZFtmuwWQCQrfz__mIgg02BWg")
 
 
 def html_popup(title, comment, imgpath, data):
@@ -40,6 +42,34 @@ def html_popup(title, comment, imgpath, data):
 def fix_tract(t):
     return str(t).rstrip("0").rstrip(".")
 
+def get_coords(data, alameda):
+    tracts = folium.features.GeoJson(alameda)
+    tract_centroids = get_centroids(alameda)
+    
+    for j in np.arange(1, 6):
+        image_coords = []
+        for i, row in data.iterrows():
+            tract = str(row['Census Tract'])
+
+            if not pd.isnull(row['Full Address of Block Face in Image #' + str(j) + ' (Street Number, Street Name, City, State, Zip Code). E.g.: 2128 Oxford Street, Berkeley, CA, 94704.']):
+                address = row['Full Address of Block Face in Image #' + str(j) + ' (Street Number, Street Name, City, State, Zip Code). E.g.: 2128 Oxford Street, Berkeley, CA, 94704.']
+                
+
+                loc = geolocator.geocode(address)
+
+                if loc is None :
+                    coords = tract_centroids[tract]
+                else:
+                    coords = [loc.latitude, loc.longitude]
+                
+                image_coords.append(coords)
+            elif not pd.isnull(row['Image #' + str(j)]):
+                image_coords.append(tract_centroids[tract])
+            else:
+                image_coords.append('NaN')
+        data['Image #' + str(j)+ ' coordinates'] = image_coords
+    return data
+        
 
 def get_centroids(geojson):
     tract_centroids = {}
@@ -51,10 +81,6 @@ def get_centroids(geojson):
         tract_centroids[name] = (float(lat), float(lon))
 
     return tract_centroids
-
-def find_coords(obs_data):
-    
-
 
 def map_data(myMap, alameda, obs_data):
     # add tract outlines
@@ -76,16 +102,8 @@ def map_data(myMap, alameda, obs_data):
                     except:
                         image_url = "NA"
 
-
+                    coords = [float(coords) for coords in re.findall('-?[0-9]+.[0-9]+', row['Image #' + str(j) + ' coordinates'])] 
                     tract = str(row['Census Tract'])
-
-                    address = row['Full Address of Photo #' + str(j) + ' Location']
-                    loc = geolocator.geocode(address)
-
-                    if loc is None :
-                        coords = tract_centroids[tract]
-                    else:
-                        coords = [loc.latitude, loc.longitude]
 
                     comment = row["Other thoughts or comments for Image #" + str(j)]
                     if not isinstance(comment, str):
@@ -108,7 +126,7 @@ def map_data(myMap, alameda, obs_data):
     return myMap
 
 
-def choropleth_overlay(mapa, column_name, joined, alameda, obs_data):
+def choropleth_overlay(mapa, column_name, joined, alameda):
     # add tract outlines
     tracts = folium.features.GeoJson(alameda)
     tract_centroids = get_centroids(alameda)
