@@ -6,8 +6,13 @@ import random
 import numpy as np
 from sklearn import preprocessing
 import re
+<<<<<<< HEAD:scripts/soc_module.py
 from geopy.geocoders import Nominatim
 import time
+=======
+from geopy.geocoders import GoogleV3
+geolocator = GoogleV3(api_key = "AIzaSyBMfXSoYJMV0snOZB1FjNfHRLM_0v1jhOo")
+>>>>>>> 7c487bebcfaa11787d185f445215e44e6a9ebff4:soc_module.py
 
 def html_popup(title, comment, imgpath, data):
     """Format the image data into html.
