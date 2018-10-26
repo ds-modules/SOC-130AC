@@ -6,6 +6,8 @@ import random
 import numpy as np
 from sklearn import preprocessing
 import re
+from geopy.geocoders import Nominatim
+import time
 
 def html_popup(title, comment, imgpath, data):
     """Format the image data into html.
@@ -46,12 +48,13 @@ def fix_tract(t):
     """
     return str(t).rstrip("0").rstrip(".")
 
-def get_coords(data, alameda):
+def get_coords(data, alameda, user_agent):
     """Get the geographical coordinates (latitude and longitude) of a
     list of street addresses.
 
     :param data: DataFrame with a column of street addresses
     :param alameda: GeoJSON data for Alameda county
+    :user_agent: string user agent for OpenStreetMap
     :returns: "data" dataframe with appended column of coordinates
     """
     tracts = folium.features.GeoJson(alameda)
@@ -66,7 +69,8 @@ def get_coords(data, alameda):
                 address = row['Full Address of Block Face in Image #' + str(j) + ' (Street Number, Street Name, City, State, Zip Code). E.g.: 2128 Oxford Street, Berkeley, CA, 94704.']
 
 
-                loc = geolocator.geocode(address)
+                geocoder = Nominatim(user_agent=user_agent, timeout=3)
+                loc = geocoder.geocode(address)
 
                 if loc is None :
                     coords = tract_centroids[tract]
@@ -78,6 +82,7 @@ def get_coords(data, alameda):
                 image_coords.append(tract_centroids[tract])
             else:
                 image_coords.append('NaN')
+            time.sleep(0.5)
         data['Image #' + str(j)+ ' coordinates'] = image_coords
     return data
 
@@ -86,7 +91,7 @@ def get_centroids(geojson):
     """Get census tract centroids.
 
     :param geojson: a GeoJSON file with census tract location data
-    :returns: a dictionary with tract names mapped to coordinates """
+    :returns: a dictionary with tract names mapped to coordinate tuples"""
     tract_centroids = {}
 
     for t in geojson['features']:
