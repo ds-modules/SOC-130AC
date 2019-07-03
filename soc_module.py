@@ -52,6 +52,8 @@ def fix_tract(t):
     :param t: Series of string tract names
     :returns: Series of cleaned tract names
     """
+    if type(t) == str:
+        return t
     return str(t).rstrip("0").rstrip(".")
 
 def get_coords(data, alameda, user_agent):
@@ -81,10 +83,9 @@ def get_coords(data, alameda, user_agent):
                 loc = geocoder.geocode(address)
 
                 if loc is None :
-                    try:
-                        coords = tract_centroids[tract]
-                    except KeyError:
-                        coord = [None, None]
+                    if len(tract) == 3:
+                        tract += "0"
+                    coords = tract_centroids[tract]
                 else:
                     coords = [loc.latitude, loc.longitude]
 
@@ -163,20 +164,27 @@ def map_data(myMap, alameda, obs_data):
                             max_width=2650)).add_to(marker_cluster)
     return myMap
 
-def scale_values(df, columns):
+def minmax_scale(x):
+    """Scales values in array to range (0, 1)
+    
+    :param x: array of values to scale
+    """
+    return (x - min(x)) / (max(x) - min(x))
+
+def scale_values(tbl, columns):
     """Scale values in a dataframe using MinMax scaling.
 
-    :param df: DataFrame
+    :param tbl: Table
     :param columns: iterable with names of columns to be scaled
-    :returns: DataFrame with scaled columns
+    :returns: Table with scaled columns
     """
-    for c in columns:
-        name = df.columns[c]
-        x = df.iloc[:, [c]].values  # returns a numpy array
-        min_max_scaler = preprocessing.MinMaxScaler()
-        x_scaled = min_max_scaler.fit_transform(x)
-        df[name] = x_scaled
-    return df
+    new_tbl = tbl.copy()
+    for col in columns:
+        name = new_tbl.labels[col]
+        x_scaled = minmax_scale(new_tbl[name])
+        new_tbl[name] = x_scaled
+        
+    return new_tbl
 
 # NO LONGER USED as of Fall 2018
 def choropleth_overlay(mapa, column_name, joined, alameda):
