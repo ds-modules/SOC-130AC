@@ -9,6 +9,12 @@ import re
 from geopy.geocoders import Nominatim
 import time
 
+import certifi
+import ssl
+import geopy.geocoders
+ctx = ssl.create_default_context(cafile=certifi.where())
+geopy.geocoders.options.default_ssl_context = ctx
+
 def html_popup(title, comment, imgpath, data):
     """Format the image data into html.
 
@@ -65,7 +71,7 @@ def get_coords(data, alameda, user_agent):
     for j in np.arange(1, 6):
         image_coords = []
         for i, row in data.iterrows():
-            tract = str(row['Census Tract'])
+            tract = row['Census Tract']
 
             if not pd.isnull(row['Full Address of Block Face in Image #' + str(j) + ' (Street Number, Street Name, City, State, Zip Code). E.g.: 2128 Oxford Street, Berkeley, CA, 94704.']):
                 address = row['Full Address of Block Face in Image #' + str(j) + ' (Street Number, Street Name, City, State, Zip Code). E.g.: 2128 Oxford Street, Berkeley, CA, 94704.']
@@ -75,7 +81,10 @@ def get_coords(data, alameda, user_agent):
                 loc = geocoder.geocode(address)
 
                 if loc is None :
-                    coords = tract_centroids[tract]
+                    try:
+                        coords = tract_centroids[tract]
+                    except KeyError:
+                        coord = [None, None]
                 else:
                     coords = [loc.latitude, loc.longitude]
 
