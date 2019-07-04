@@ -126,11 +126,14 @@ def map_data(myMap, alameda, obs_data):
     tracts = folium.features.GeoJson(alameda)
     tract_centroids = get_centroids(alameda)
     myMap.add_child(tracts)
-
+    
+    # transfer Table to pandas
+    obs_data = obs_data.to_df()
 
     for t in list(set(set(obs_data['Census Tract']))):
-        marker_cluster = folium.plugins.MarkerCluster().add_to(myMap)
         subset = obs_data[obs_data['Census Tract'] == t]
+        markers = []
+        popups = []
 
         for i, row in subset.iterrows():
             for j in np.arange(1, 6):
@@ -142,6 +145,10 @@ def map_data(myMap, alameda, obs_data):
                         image_url = "NA"
 
                     coords = [float(coords) for coords in re.findall('-?[0-9]+.[0-9]+', row['Image #' + str(j) + ' coordinates'])]
+                    
+                    # if there aren't coords of format [lat, lon] the loop skips this iteration
+                    if len(coords) != 2:
+                        continue
                     tract = str(row['Census Tract'])
 
                     comment = row["Other thoughts or comments for Image #" + str(j)]
@@ -154,14 +161,20 @@ def map_data(myMap, alameda, obs_data):
                         comment=comment,
                         imgpath=image_url,
                         data="")
-                    folium.Marker(
-                        coords,
-                        popup=folium.Popup(
-                            folium.IFrame(
-                                html=html,
-                                width=200,
-                                height=300),
-                            max_width=2650)).add_to(marker_cluster)
+                    
+                    popup = folium.Popup(
+                        folium.IFrame(
+                            html=html,
+                            width=200,
+                            height=300),
+                        max_width=2650
+                    )
+                    
+                    markers += [coords]
+                    popups += [popup]
+                    
+        marker_cluster = folium.plugins.MarkerCluster(locations=markers, popups=popups).add_to(myMap)
+    
     return myMap
 
 def minmax_scale(x):
