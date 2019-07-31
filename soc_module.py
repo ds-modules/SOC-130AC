@@ -12,8 +12,8 @@ import time
 import certifi
 import ssl
 import geopy.geocoders
-ctx = ssl.create_default_context(cafile=certifi.where())
-geopy.geocoders.options.default_ssl_context = ctx
+# ctx = ssl.create_default_context(cafile=certifi.where())
+# geopy.geocoders.options.default_ssl_context = ctx
 
 def html_popup(title, comment, imgpath, data):
     """Format the image data into html.
