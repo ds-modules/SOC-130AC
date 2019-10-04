@@ -1,0 +1,140 @@
+Timestamp,Census Tract,Amount of Beer/Liquor Bottles (1 to 5 scale),Amount of Cigarette/Cigar Butts (1 to 5 scale),Amount of Condoms (1 to 5 scale),Amount of Garbage (1 to 5 scale),Abandoned Cars (Y?N),Treatment (1 (Friendly) to 5 (Suspicion) scale),Condition of Buildings (1 (Good) to 4 (Poor) scale),Graffiti (Y/N),Fenching (1 (None) to 4 (High mesh) scale),Renovations (Y/N),Types of Establishments,Amount of Trees Linked the Block Fence (1 (Few) to 3 (Most) scale),Public Transporation Available (Y/N),Private Security Visible (Y/N),Police Visible (Y/N)
+10/21/2018 22:10:14,4229.0,2.0,2.0,1.0,2.0,0.0,4.0,2.0,1,2.0,1,"Eating places/restaurants, Professional offices (doctor dentist lawyer accountant real estate)",2.0,1,0,0
+10/21/2018 22:23:08,4006.0,1.0,1.0,1.0,2.0,0.0,4.0,2.0,1,2.0,0,Liquor stores or Marijuana Dispensaries,2.0,1,0,1
+10/22/2018 0:01:58,4224.0,3.0,2.0,1.0,3.0,1.0,3.0,2.0,0,3.0,1,"Bars and alcoholic beverage services, Eating places/restaurants, Fast food or take-out places, Liquor stores or Marijuana Dispensaries, Warehouses",2.0,1,0,0
+10/22/2018 0:08:49,4031.0,1.0,3.0,1.0,3.0,0.0,2.0,2.0,1,1.0,0,"Bodega deli corner-store convenience store, Eating places/restaurants, Payday lenders check cashers or pawn shops, Supermarkets/grocery stores",1.0,0,0,0
+10/22/2018 0:09:49,4239.01,1.0,1.0,1.0,3.0,0.0,2.0,2.0,0,1.0,1,"Bars and alcoholic beverage services, Professional offices (doctor dentist lawyer accountant real estate)",2.0,1,1,0
+10/22/2018 10:52:35,4027.0,4.0,4.0,2.0,4.0,1.0,4.0,4.0,1,4.0,0,"Bars and alcoholic beverage services, Bodega deli corner-store convenience store, Liquor stores or Marijuana Dispensaries, Manufacturing, Warehouses",2.0,1,0,0
+10/22/2018 12:00:25,4014.0,1.0,2.0,1.0,4.0,1.0,3.0,3.0,1,3.0,1,"Community center, Playgrounds",1.0,1,0,1
+10/22/2018 12:36:50,4239.01,3.0,1.0,1.0,3.0,0.0,2.0,2.0,1,2.0,0,"Gas station, Liquor stores or Marijuana Dispensaries",2.0,1,0,0
+10/22/2018 13:49:40,4239.01,1.0,2.0,1.0,2.0,0.0,2.0,2.0,1,2.0,0,,3.0,0,0,0
+10/22/2018 23:01:24,4229.0,1.0,2.0,1.0,2.0,0.0,2.0,1.0,0,2.0,1,"Banks or credit unions, Bars and alcoholic beverage services, Community center, Eating places/restaurants, Liquor stores or Marijuana Dispensaries, Public library, Post office, Schools or daycare centers, Supermarkets/grocery stores",2.0,1,1,0
+10/22/2018 15:17:51,4028.0,1.0,2.0,1.0,1.0,0.0,3.0,1.0,1,2.0,1,"Community center, Warehouses",2.0,1,0,0
+10/22/2018 15:25:57,4203.0,1.0,2.0,1.0,1.0,1.0,2.0,2.0,0,1.0,0,,2.0,0,0,0
+10/22/2018 16:38:09,4005.0,2.0,3.0,1.0,3.0,0.0,2.0,3.0,0,2.0,0,,2.0,0,0,0
+10/22/2018 16:56:02,4217.0,1.0,2.0,1.0,2.0,0.0,2.0,2.0,0,1.0,0,Supermarkets/grocery stores,3.0,1,1,0
+10/22/2018 16:57:02,4203.0,1.0,1.0,1.0,1.0,1.0,5.0,2.0,0,1.0,0,Schools or daycare centers,3.0,0,0,0
+10/22/2018 17:58:19,4206.0,1.0,1.0,1.0,1.0,0.0,5.0,1.0,0,1.0,0,"Parks, Playgrounds, Schools or daycare centers",3.0,0,0,0
+10/22/2018 18:55:28,403.0,1.0,2.0,1.0,2.0,0.0,1.0,1.0,0,2.0,1,"Banks or credit unions, Community center, Eating places/restaurants, Fast food or take-out places, Schools or daycare centers",2.0,1,0,0
+10/22/2018 19:05:25,4007.0,1.0,2.0,1.0,2.0,0.0,2.0,3.0,0,3.0,0,,2.0,0,0,0
+10/22/2018 20:02:54,4027.0,2.0,2.0,1.0,3.0,1.0,3.0,3.0,1,3.0,0,,3.0,0,0,0
+10/22/2018 20:42:07,4204.0,1.0,1.0,1.0,1.0,0.0,2.0,1.0,0,1.0,1,Parks,3.0,0,0,0
+10/22/2018 21:09:02,4235.0,1.0,1.0,1.0,1.0,0.0,3.0,3.0,0,1.0,1,Chain retail stores,2.0,1,0,0
+10/23/2018 0:15:21,4007.0,2.0,2.0,1.0,2.0,0.0,3.0,2.0,0,2.0,1,,2.0,1,0,0
+10/24/2018 0:17:21,4201.0,1.0,1.0,1.0,1.0,0.0,2.0,1.0,0,2.0,1,,3.0,0,0,0
+10/22/2018 22:19:38,4204.0,2.0,2.0,2.0,2.0,0.0,3.0,2.0,1,1.0,0,"Community center, Eating places/restaurants, Fast food or take-out places, Parks, Playgrounds, Schools or daycare centers, Supermarkets/grocery stores, Warehouses",1.0,1,0,0
+10/23/2018 22:59:20,4201.0,1.0,1.0,1.0,1.0,0.0,3.0,1.0,1,1.0,0,"Parks, Schools or daycare centers",3.0,0,0,0
+10/23/2018 1:11:34,4031.0,1.0,2.0,1.0,2.0,0.0,2.0,1.0,0,1.0,0,"Bars and alcoholic beverage services, Eating places/restaurants",3.0,0,0,0
+10/23/2018 12:01:35,403.0,1.0,3.0,1.0,4.0,0.0,3.0,2.0,1,3.0,0,Professional offices (doctor dentist lawyer accountant real estate),3.0,1,0,0
+10/23/2018 12:22:15,4033.0,1.0,5.0,1.0,1.0,0.0,4.0,3.0,0,3.0,0,"Auto repair/auto body shop, Liquor stores or Marijuana Dispensaries",1.0,0,0,0
+10/23/2018 13:57:52,4205.0,1.0,1.0,1.0,1.0,0.0,2.0,1.0,0,1.0,0,,3.0,0,0,0
+10/23/2018 14:50:52,4213.0,1.0,1.0,1.0,1.0,0.0,2.0,1.0,0,2.0,0,"Bodega deli corner-store convenience store, Fire station, Gas station, Parks, Public library, Schools or daycare centers",2.0,1,0,0
+10/23/2018 14:59:13,4229.0,1.0,1.0,1.0,2.0,0.0,4.0,1.0,0,3.0,1,"Banks or credit unions, Bars and alcoholic beverage services, Eating places/restaurants",2.0,1,0,0
+10/23/2018 15:15:07,4213.0,1.0,4.0,1.0,2.0,1.0,4.0,3.0,0,2.0,1,Eating places/restaurants,2.0,1,0,1
+10/23/2018 15:27:46,4202.0,1.0,1.0,1.0,1.0,0.0,2.0,1.0,0,2.0,0,"Community center, Eating places/restaurants, Playgrounds",3.0,1,0,0
+10/23/2018 17:34:16,4217.0,1.0,1.0,1.0,1.0,0.0,2.0,1.0,0,1.0,0,"Bars and alcoholic beverage services, Chain retail stores, Eating places/restaurants, Post office, Professional offices (doctor dentist lawyer accountant real estate)",3.0,1,0,0
+10/23/2018 18:08:22,4027.0,1.0,1.0,1.0,3.0,1.0,3.0,2.0,1,3.0,0,,2.0,0,0,0
+10/23/2018 18:33:52,401.0,1.0,2.0,1.0,1.0,0.0,3.0,1.0,1,2.0,0,,1.0,1,0,0
+10/23/2018 19:53:32,4005.0,2.0,1.0,2.0,2.0,3.0,5.0,2.0,0,1.0,1,,3.0,0,0,0
+10/23/2018 20:00:48,4005.0,1.0,1.0,1.0,2.0,0.0,3.0,2.0,0,1.0,1,,3.0,0,0,0
+10/23/2018 20:19:22,4212.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0,2.0,0,"Parks, Schools or daycare centers",3.0,1,0,0
+10/23/2018 20:27:26,4027.0,2.0,2.0,1.0,2.0,0.0,3.0,2.0,0,1.0,0,,3.0,0,0,0
+10/23/2018 20:33:02,401.0,2.0,3.0,1.0,2.0,0.0,2.0,2.0,0,3.0,1,Professional offices (doctor dentist lawyer accountant real estate),2.0,0,0,0
+10/23/2018 20:39:12,4028.0,1.0,3.0,1.0,2.0,0.0,3.0,2.0,1,2.0,0,Eating places/restaurants,1.0,0,1,0
+10/23/2018 20:42:19,401.0,2.0,3.0,1.0,3.0,1.0,5.0,2.0,0,2.0,0,,2.0,0,0,0
+10/23/2018 20:42:58,4201.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1,2.0,0,"Community center, Playgrounds, Schools or daycare centers",3.0,0,0,0
+10/23/2018 20:54:32,4206.0,1.0,1.0,1.0,1.0,0.0,2.0,2.0,0,2.0,0,Schools or daycare centers,3.0,0,0,0
+10/23/2018 21:11:05,4224.0,1.0,2.0,1.0,4.0,0.0,5.0,2.0,0,3.0,0,Parks,2.0,0,0,0
+10/23/2018 21:13:32,4202.0,1.0,1.0,1.0,1.0,0.0,2.0,1.0,0,1.0,1,"Bodega deli corner-store convenience store, Eating places/restaurants",3.0,0,0,0
+10/23/2018 21:18:34,4014.0,1.0,1.0,1.0,3.0,1.0,3.0,2.0,1,4.0,0,"Liquor stores or Marijuana Dispensaries, Playgrounds",1.0,0,0,0
+10/23/2018 21:32:03,4202.0,1.0,3.0,1.0,4.0,0.0,2.0,3.0,0,1.0,1,"Banks or credit unions, Bars and alcoholic beverage services, Eating places/restaurants, Liquor stores or Marijuana Dispensaries, Professional offices (doctor dentist lawyer accountant real estate)",3.0,1,0,0
+10/23/2018 21:45:10,4235.0,1.0,1.0,1.0,2.0,0.0,1.0,1.0,1,2.0,0,Auto repair/auto body shop,3.0,0,0,0
+10/23/2018 23:23:27,4201.0,1.0,1.0,1.0,1.0,0.0,4.0,1.0,0,1.0,0,"Parks, Playgrounds",3.0,0,0,0
+10/23/2018 21:59:18,4007.0,3.0,3.0,3.0,2.0,0.0,2.0,2.0,1,2.0,0,"Auto repair/auto body shop, Bodega deli corner-store convenience store, Eating places/restaurants, Liquor stores or Marijuana Dispensaries",2.0,1,0,0
+10/23/2018 22:20:02,403.0,1.0,4.0,1.0,4.0,0.0,4.0,3.0,1,1.0,0,"Banks or credit unions, Eating places/restaurants, Supermarkets/grocery stores",1.0,0,0,1
+10/23/2018 22:19:16,4205.0,1.0,1.0,1.0,1.0,0.0,2.0,1.0,0,2.0,1,Schools or daycare centers,3.0,0,0,0
+10/23/2018 22:22:04,4005.0,1.0,1.0,1.0,1.0,0.0,1.0,2.0,1,4.0,1,"Eating places/restaurants, Fast food or take-out places, Supermarkets/grocery stores",2.0,1,0,0
+10/23/2018 22:48:00,4206.0,1.0,1.0,1.0,1.0,0.0,2.0,1.0,0,1.0,0,"Parks, Playgrounds",3.0,0,0,0
+10/23/2018 23:29:08,4214.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0,2.0,0,,2.0,1,0,0
+10/23/2018 22:37:16,4229.0,1.0,2.0,1.0,2.0,0.0,1.0,2.0,0,1.0,0,"Banks or credit unions, Bars and alcoholic beverage services, Eating places/restaurants, N/A",2.0,1,0,1
+10/23/2018 22:49:13,4235.0,1.0,2.0,1.0,2.0,0.0,3.0,3.0,1,3.0,0,Auto repair/auto body shop,3.0,0,0,0
+10/23/2018 22:55:25,4014.0,1.0,1.0,1.0,3.0,0.0,3.0,2.0,1,2.0,1,,1.0,1,0,0
+10/23/2018 23:39:25,4212.0,1.0,1.0,1.0,1.0,0.0,2.0,1.0,1,2.0,0,"Parks, Playgrounds",3.0,0,0,0
+10/23/2018 23:44:07,4033.0,2.0,3.0,1.0,3.0,1.0,2.0,2.0,1,2.0,1,"Banks or credit unions, Bars and alcoholic beverage services, Bodega deli corner-store convenience store, Community center, Eating places/restaurants, Public library, Post office, Schools or daycare centers, Warehouses",2.0,1,0,1
+10/23/2018 23:45:03,4007.0,1.0,2.0,1.0,2.0,0.0,3.0,2.0,0,2.0,1,"Parks, Playgrounds",3.0,1,0,0
+10/24/2018 0:03:06,4031.0,1.0,1.0,1.0,2.0,0.0,3.0,1.0,0,2.0,0,"Bars and alcoholic beverage services, Eating places/restaurants, Professional offices (doctor dentist lawyer accountant real estate), Supermarkets/grocery stores",3.0,0,0,0
+10/24/2018 0:06:50,401.0,2.0,2.0,1.0,3.0,0.0,3.0,3.0,1,2.0,1,"Auto repair/auto body shop, Liquor stores or Marijuana Dispensaries",2.0,1,0,0
+10/24/2018 0:07:49,4214.0,1.0,1.0,1.0,2.0,0.0,1.0,2.0,1,2.0,0,"Playgrounds, Schools or daycare centers",3.0,1,0,0
+10/24/2018 9:25:35,4006.0,1.0,1.0,1.0,3.0,0.0,3.0,2.0,1,3.0,0,"Auto repair/auto body shop, Eating places/restaurants",2.0,1,0,0
+10/24/2018 0:22:47,4014.0,3.0,5.0,1.0,4.0,0.0,3.0,3.0,1,3.0,1,Supermarkets/grocery stores,3.0,0,0,0
+10/24/2018 0:47:54,4201.0,1.0,1.0,1.0,1.0,0.0,2.0,1.0,0,2.0,0,,3.0,0,0,0
+10/24/2018 11:32:54,4028.0,1.0,1.0,1.0,1.0,0.0,3.0,2.0,1,1.0,0,"Eating places/restaurants, Parks",3.0,0,0,0
+10/24/2018 0:53:13,4224.0,1.0,1.0,3.0,1.0,0.0,2.0,2.0,0,2.0,1,"Eating places/restaurants, Fast food or take-out places, Parks",2.0,0,0,1
+10/24/2018 0:53:41,4204.0,1.0,1.0,1.0,2.0,0.0,2.0,1.0,0,2.0,0,,3.0,1,0,0
+10/24/2018 1:06:53,4205.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0,2.0,1,"Community center, Eating places/restaurants, Fire station, Public library, Post office, Schools or daycare centers",3.0,1,0,0
+10/24/2018 9:08:59,4214.0,1.0,1.0,1.0,2.0,0.0,2.0,2.0,0,1.0,0,,1.0,0,0,0
+10/24/2018 1:03:26,4202.0,1.0,1.0,1.0,2.0,0.0,1.0,1.0,0,1.0,0,,2.0,0,0,0
+10/24/2018 1:41:32,4201.0,1.0,1.0,1.0,2.0,0.0,1.0,1.0,1,2.0,1,"Parks, Playgrounds, Schools or daycare centers",3.0,0,0,0
+10/24/2018 1:55:42,4033.0,1.0,2.0,1.0,1.0,0.0,1.0,1.0,1,3.0,0,Public library,3.0,0,1,1
+10/24/2018 1:56:33,4239.01,1.0,2.0,1.0,1.0,3.0,3.0,2.0,1,1.0,0,"Manufacturing, Supermarkets/grocery stores, Warehouses",3.0,0,0,0
+10/24/2018 2:10:54,4006.0,1.0,1.0,1.0,2.0,0.0,1.0,2.0,0,2.0,0,,2.0,0,0,0
+10/24/2018 2:15:37,4031.0,2.0,4.0,3.0,4.0,0.0,4.0,3.0,1,1.0,0,"Eating places/restaurants, Parks, Playgrounds",2.0,0,0,1
+10/24/2018 2:19:50,4212.0,1.0,1.0,1.0,1.0,0.0,3.0,1.0,1,1.0,0,,3.0,0,0,0
+10/24/2018 2:32:08,4202.0,1.0,2.0,1.0,2.0,0.0,3.0,1.0,1,2.0,0,"Auto repair/auto body shop, Eating places/restaurants",2.0,0,0,0
+10/24/2018 7:58:51,4203.0,1.0,1.0,1.0,1.0,1.0,3.0,2.0,0,1.0,0,,1.0,0,0,0
+10/24/2018 8:20:12,4213.0,1.0,1.0,1.0,2.0,0.0,2.0,1.0,0,1.0,0,,3.0,1,0,0
+10/24/2018 8:40:16,4203.0,1.0,3.0,1.0,2.0,0.0,3.0,1.0,0,2.0,1,"Community center, Eating places/restaurants, Schools or daycare centers",3.0,1,0,0
+10/24/2018 8:55:10,4027.0,3.0,2.0,2.0,3.0,1.0,2.0,2.0,1,3.0,1,"Bars and alcoholic beverage services, Community center, Fast food or take-out places, Gas station, Liquor stores or Marijuana Dispensaries, Parks, Playgrounds, Schools or daycare centers",2.0,1,0,1
+10/24/2018 9:46:58,4007.0,2.0,1.0,1.0,2.0,2.0,2.0,1.0,0,2.0,0,,2.0,0,0,0
+10/24/2018 9:50:25,4224.0,1.0,1.0,1.0,1.0,0.0,3.0,1.0,0,1.0,0,"Auto repair/auto body shop, Schools or daycare centers",2.0,0,0,0
+10/24/2018 10:29:46,4201.0,1.0,2.0,1.0,2.0,0.0,5.0,2.0,0,1.0,0,,1.0,0,0,0
+10/24/2018 10:34:46,4033.0,1.0,5.0,1.0,2.0,0.0,1.0,3.0,1,2.0,0,"Bodega deli corner-store convenience store, Eating places/restaurants, Fast food or take-out places, Parks, Playgrounds, Schools or daycare centers, Supermarkets/grocery stores",1.0,1,0,1
+10/24/2018 10:58:26,4006.0,1.0,1.0,1.0,2.0,0.0,2.0,2.0,1,2.0,0,,3.0,1,0,0
+10/24/2018 11:02:57,4213.0,1.0,1.0,1.0,1.0,0.0,2.0,1.0,0,2.0,0,,3.0,0,0,0
+10/24/2018 11:03:10,4217.0,1.0,1.0,1.0,2.0,0.0,3.0,1.0,0,1.0,0,"Banks or credit unions, Bars and alcoholic beverage services, Eating places/restaurants, Post office, Professional offices (doctor dentist lawyer accountant real estate), Supermarkets/grocery stores",3.0,1,1,0
+10/24/2018 11:05:31,4206.0,1.0,1.0,1.0,2.0,0.0,2.0,1.0,0,1.0,0,Professional offices (doctor dentist lawyer accountant real estate),3.0,0,0,0
+10/24/2018 11:06:57,4033.0,1.0,1.0,1.0,3.0,1.0,2.0,3.0,1,2.0,0,"Professional offices (doctor dentist lawyer accountant real estate), Schools or daycare centers, Supermarkets/grocery stores",2.0,0,0,0
+10/24/2018 11:27:42,4203.0,1.0,2.0,1.0,2.0,1.0,3.0,2.0,1,2.0,0,,2.0,0,0,1
+10/24/2018 11:20:45,4217.0,1.0,1.0,1.0,3.0,0.0,2.0,2.0,1,2.0,1,,3.0,1,0,0
+10/24/2018 11:23:47,4235.0,1.0,2.0,1.0,2.0,0.0,2.0,2.0,1,1.0,0,"Eating places/restaurants, Supermarkets/grocery stores",2.0,0,0,0
+10/26/2018 18:44:08,4007.0,4.0,4.0,1.0,4.0,0.0,4.0,3.0,1,2.0,1,"Fast food or take-out places, Manufacturing",1.0,0,0,0
+10/24/2018 11:24:31,4007.0,1.0,1.0,1.0,2.0,1.0,1.0,2.0,1,1.0,1,"Auto repair/auto body shop, Bars and alcoholic beverage services, Eating places/restaurants, Professional offices (doctor dentist lawyer accountant real estate)",2.0,1,0,0
+10/24/2018 11:32:03,4202.0,1.0,1.0,1.0,1.0,0.0,2.0,1.0,0,1.0,0,Eating places/restaurants,2.0,0,0,0
+10/24/2018 11:38:30,4212.0,1.0,1.0,1.0,1.0,0.0,3.0,1.0,0,3.0,0,,2.0,0,0,0
+10/24/2018 11:39:04,4006.0,2.0,2.0,1.0,2.0,0.0,2.0,1.0,0,2.0,0,"Community center, Playgrounds, Professional offices (doctor dentist lawyer accountant real estate), Schools or daycare centers, Supermarkets/grocery stores",1.0,1,0,0
+10/24/2018 11:47:43,4205.0,1.0,2.0,1.0,2.0,1.0,3.0,2.0,0,1.0,0,"Community center, Eating places/restaurants",2.0,0,0,0
+10/24/2018 11:49:08,4005.0,1.0,2.0,1.0,2.0,2.0,4.0,2.0,0,2.0,1,,3.0,0,0,0
+10/24/2018 11:51:33,4203.0,1.0,1.0,1.0,1.0,1.0,3.0,1.0,0,2.0,0,,1.0,0,0,0
+10/24/2018 12:02:53,4027.0,1.0,2.0,1.0,2.0,0.0,3.0,2.0,0,2.0,0,"Fire station, Gas station",2.0,0,0,0
+10/24/2018 12:05:05,4031.0,1.0,1.0,1.0,1.0,0.0,3.0,1.0,1,1.0,1,"Bars and alcoholic beverage services, Eating places/restaurants",1.0,1,0,0
+10/24/2018 12:05:41,4202.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0,1.0,0,Post office,3.0,1,0,0
+10/24/2018 12:11:54,4028.0,1.0,1.0,1.0,1.0,0.0,2.0,1.0,0,1.0,1,"Bars and alcoholic beverage services, Bodega deli corner-store convenience store, Eating places/restaurants",1.0,1,0,0
+10/24/2018 12:28:10,4206.0,1.0,1.0,1.0,1.0,2.0,5.0,1.0,0,1.0,0,,3.0,0,0,0
+10/24/2018 12:30:08,4006.0,2.0,3.0,1.0,3.0,0.0,2.0,2.0,1,2.0,0,Liquor stores or Marijuana Dispensaries,3.0,1,0,1
+10/24/2018 12:38:50,401.0,2.0,1.0,1.0,2.0,0.0,1.0,1.0,1,1.0,1,Liquor stores or Marijuana Dispensaries,3.0,1,0,0
+10/24/2018 12:45:11,4217.0,1.0,3.0,1.0,2.0,0.0,3.0,2.0,1,2.0,0,"Eating places/restaurants, Professional offices (doctor dentist lawyer accountant real estate), Supermarkets/grocery stores",2.0,0,0,0
+10/24/2018 12:49:48,4205.0,1.0,4.0,1.0,3.0,0.0,3.0,3.0,0,2.0,1,,3.0,1,0,0
+10/24/2018 13:13:13,4224.0,2.0,2.0,2.0,2.0,1.0,1.0,2.0,0,3.0,0,,3.0,1,0,0
+10/24/2018 15:45:29,4212.0,1.0,1.0,1.0,2.0,0.0,2.0,1.0,0,2.0,1,,3.0,0,0,0
+10/24/2018 14:33:21,4235.0,2.0,3.0,1.0,3.0,0.0,2.0,2.0,1,2.0,0,"Auto repair/auto body shop, Community center",3.0,1,0,0
+10/24/2018 14:52:09,4014.0,2.0,4.0,1.0,3.0,2.0,1.0,3.0,1,3.0,0,"Liquor stores or Marijuana Dispensaries, Schools or daycare centers, Supermarkets/grocery stores, Warehouses",2.0,1,0,0
+10/24/2018 15:26:58,4214.0,1.0,1.0,1.0,1.0,0.0,3.0,2.0,0,4.0,1,Professional offices (doctor dentist lawyer accountant real estate),2.0,1,0,0
+10/24/2018 15:27:40,4239.01,1.0,2.0,1.0,2.0,0.0,1.0,3.0,1,1.0,0,Auto repair/auto body shop,2.0,0,0,0
+10/24/2018 15:52:02,4213.0,1.0,1.0,1.0,1.0,0.0,2.0,1.0,1,1.0,0,"Banks or credit unions, Eating places/restaurants, Gas station, Supermarkets/grocery stores",2.0,1,0,0
+10/24/2018 16:37:53,403.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0,1.0,1,"Banks or credit unions, Community center, Eating places/restaurants, Schools or daycare centers",3.0,0,1,0
+10/24/2018 16:57:59,4214.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0,1.0,1,,3.0,0,0,0
+10/24/2018 17:20:33,4014.0,1.0,2.0,1.0,4.0,0.0,3.0,2.0,1,3.0,0,"Auto repair/auto body shop, Manufacturing",2.0,1,0,0
+10/24/2018 18:30:31,401.0,1.0,2.0,1.0,4.0,0.0,3.0,2.0,1,2.0,1,Auto repair/auto body shop,2.0,0,0,0
+10/24/2018 19:01:01,4028.0,1.0,3.0,1.0,3.0,0.0,3.0,2.0,1,1.0,1,Professional offices (doctor dentist lawyer accountant real estate),2.0,1,0,1
+10/24/2018 19:47:23,4217.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1,1.0,0,,2.0,1,0,0
+10/24/2018 21:54:00,4224.0,1.0,1.0,1.0,1.0,0.0,1.0,2.0,0,2.0,0,,1.0,0,0,0
+10/24/2018 22:29:18,4229.0,1.0,2.0,1.0,1.0,0.0,2.0,2.0,0,1.0,0,"Community center, Parks, Post office, Professional offices (doctor dentist lawyer accountant real estate), Schools or daycare centers",2.0,1,0,0
+10/24/2018 23:25:18,4212.0,1.0,1.0,1.0,1.0,0.0,3.0,3.0,0,1.0,0,"Fire station, Gas station, Parks, Playgrounds",2.0,1,0,0
+10/25/2018 3:34:11,4239.01,1.0,1.0,1.0,1.0,0.0,3.0,1.0,0,2.0,0,,3.0,0,0,0
+10/25/2018 14:31:03,4031.0,1.0,3.0,1.0,3.0,1.0,2.0,2.0,1,2.0,1,"Eating places/restaurants, Liquor stores or Marijuana Dispensaries",2.0,0,0,1
+10/28/2018 22:08:40,403.0,2.0,2.0,1.0,2.0,1.0,1.0,4.0,1,1.0,1,"Banks or credit unions, Chain retail stores, Community center, Eating places/restaurants, Fast food or take-out places, Parks, Playgrounds, Schools or daycare centers",1.0,1,0,1
+10/29/2018 12:40:23,4214.0,1.0,1.0,1.0,2.0,0.0,1.0,2.0,0,2.0,0,,3.0,1,0,0
+10/29/2018 15:00:33,4235.0,2.0,2.0,1.0,2.0,2.0,2.0,3.0,1,2.0,1,"Auto repair/auto body shop, Eating places/restaurants, Manufacturing",2.0,1,0,0
+10/29/2018 15:54:25,4014.0,1.0,3.0,1.0,3.0,0.0,5.0,3.0,0,3.0,1,"Playgrounds, Schools or daycare centers",2.0,0,0,0
+10/29/2018 17:46:32,4205.0,1.0,2.0,1.0,2.0,0.0,3.0,2.0,0,2.0,1,"Community center, Eating places/restaurants, Professional offices (doctor dentist lawyer accountant real estate), Schools or daycare centers",2.0,1,0,0
+10/29/2018 19:54:05,4033.0,1.0,4.0,1.0,4.0,0.0,1.0,2.0,1,1.0,0,"Community center, Schools or daycare centers",1.0,1,0,0
