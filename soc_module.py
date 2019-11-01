@@ -182,6 +182,8 @@ def minmax_scale(x):
     
     :param x: array of values to scale
     """
+    if min(x) == max(x):
+        return x * 0
     return (x - min(x)) / (max(x) - min(x))
 
 def scale_values(tbl, columns):
