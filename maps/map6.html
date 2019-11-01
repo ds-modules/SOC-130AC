@@ -7,11 +7,11 @@
             L_DISABLE_3D = false;
         </script>
     
-    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
@@ -69,16 +69,16 @@
     
         function geo_json_7e98d32fdaa5419bacf16893c5b52783_styler(feature) {
             switch(feature.properties.name10) {
-                case "4224": case "4212": case "4201": case "4235": case "4027": case "4006": case "4028": case "4007": case "4014": 
-                    return {"color": "black", "fillColor": "#9ebcda", "fillOpacity": 0.7, "opacity": 0.2, "weight": 1};
-                case "4204": case "4202": case "4206": case "4213": case "4031": 
+                case "4224": case "4201": case "4206": case "4031": case "4028": 
                     return {"color": "black", "fillColor": "#8c96c6", "fillOpacity": 0.7, "opacity": 0.2, "weight": 1};
-                case "4217": case "4033": case "4205": 
-                    return {"color": "black", "fillColor": "#8856a7", "fillOpacity": 0.7, "opacity": 0.2, "weight": 1};
-                case "4005": case "4214": case "4203": case "4239.01": 
+                case "4204": case "4005": case "4030": 
+                    return {"color": "black", "fillColor": "#9ebcda", "fillOpacity": 0.7, "opacity": 0.2, "weight": 1};
+                case "4217": case "4212": case "4202": case "4235": case "4213": case "4033": case "4027": case "4214": case "4014": case "4010": 
                     return {"color": "black", "fillColor": "#bfd3e6", "fillOpacity": 0.7, "opacity": 0.2, "weight": 1};
-                case "4229": 
+                case "4203": case "4205": 
                     return {"color": "black", "fillColor": "#810f7c", "fillOpacity": 0.7, "opacity": 0.2, "weight": 1};
+                case "4229": 
+                    return {"color": "black", "fillColor": "#8856a7", "fillOpacity": 0.7, "opacity": 0.2, "weight": 1};
                 default:
                     return {"color": "black", "fillColor": "#edf8fb", "fillOpacity": 0.7, "opacity": 0.2, "weight": 1};
             }
@@ -118,7 +118,7 @@
         .scale(color_map_7d4e3f70982343aaa52c5d0ecf01c83f.x)
         .orient("top")
         .tickSize(1)
-        .tickValues([0.0, 0.058974358974358966, 0.11794871794871793, 0.1769230769230769, 0.23589743589743586, 0.2948717948717948, 0.3538461538461538]);
+        .tickValues([0.0, 0.0808080808080808, 0.1616161616161616, 0.2424242424242424, 0.3232323232323232, 0.404040404040404, 0.4848484848484848]);
 
     color_map_7d4e3f70982343aaa52c5d0ecf01c83f.svg = d3.select(".legend.leaflet-control").append("svg")
         .attr("id", 'legend')
