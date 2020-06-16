@@ -3,7 +3,7 @@
 [![Binder](https://img.shields.io/badge/Launch-UCB%20Datahub-blue.svg)](http://datahub.berkeley.edu/user-redirect/interact?account=ds-modules&repo=SOC-130AC&branch=master&path=
 ) 
 
-<p>Instructor: Daniel Scheider (Spring 2018), Joanna Reed (Fall 2017, Fall 2018, Fall 2019)</p>
+<p>Instructor: Daniel Schneider (Spring 2018), Joanna Reed (Fall 2017, Fall 2018, Fall 2019)</p>
 <p>Current Developers: Yana Mykhailovska, Xiantao Wang</p>
 <p>Team Lead: Timlan Wong</p>
 
